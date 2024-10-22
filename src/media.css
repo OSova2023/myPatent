@@ -1,0 +1,197 @@
+@media(max-width: 1440px) {
+    .link {
+      padding: 6px 10px;
+    }
+    .container_body {
+      padding: 0px 120px;
+      /* px-40 2xl:px-30 xl:px-20 lg:px-10 md:px-5 sm:px-1 */
+    }
+  }
+  @media(max-width: 1279px) {
+    .link {
+      padding: 6px 10px;
+    }
+    .container_body {
+      padding: 0px 100px;
+    }
+
+    .footer {
+      margin-top: 80px;
+    }
+  }
+  @media(max-width: 1024px) {
+    .link {
+      padding: 3px 5px;
+      font-size: 18px;
+    }
+    .container_body {
+      padding: 0px 80px;
+    }
+    .header__container {
+      font-size: 15px;  
+    }
+    .about_stat_title {
+      font-size: 26px;
+    }
+    .about_stat_text {
+      font-size: 18px;
+    }
+    .title {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 350;
+    }
+    .header_text-right {
+      font-size: 15px;
+    }
+    .feedback_li {
+      flex: 0 0 45%;
+      box-shadow: 8px 8px 8px #cacaca;
+      margin: 6px;
+    }
+    .footer {
+      margin-top: 60px;
+    }
+  }
+
+  @media(max-width: 932px) {
+    .container_body {
+      padding: 0px 60px;
+      /* px-40 2xl:px-30 xl:px-20 lg:px-10 md:px-5 sm:px-1 */
+    }
+    .title {
+      font-size: 30px;
+      line-height: 38px;
+      font-weight: 350;
+    }
+    .comp_title {
+      font-size: 18px;
+      margin-top: 20px;
+      margin-bottom: 16px;
+      line-height: 18px;
+    }
+    .comp_title_child {
+      font-size: 14px;
+    }
+    .about_text {
+      font-size: 16px;
+    }
+    .header_text-right {
+    display: none;
+   }
+   .about_stat_title{
+    font-size: 23px;
+  }
+  .about_stat_text{
+    font-size: 16px;
+  }
+  .contacts_data-text {
+    font-size: 18px;
+  }
+  .contact_icons {
+      width: 18px;
+      height: 10px;
+  }
+   .footer_columns {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer {
+    margin-top: 50px;
+  }  
+}
+
+  @media(max-width: 768px) {
+    .container_body {
+      padding: 0px 40px;
+      /* px-40 2xl:px-30 xl:px-20 lg:px-10 md:px-5 sm:px-1 */
+    }
+    .link {
+      padding: 6px 10px;
+    }  
+    .title {
+      font-size: 26px;
+      line-height: 35px;
+      font-weight: 350;
+    }
+    .buro_krivtcov__container {
+      display: block;
+    }
+    .button__consult {
+      border-radius: 4px;
+        padding: 11px 30px;
+        font-size: 17px;
+    }
+    .about_stat_title{
+      font-size: 23px;
+    }
+    .about_stat_text{
+      font-size: 16px;
+    }
+
+    .footer {
+      margin-top: 30px;
+    }
+    .container__slider {
+      width: 80%;
+    }
+  }
+
+
+  @media(max-width: 640px) {
+    .link {
+      padding: 6px 10px;
+    }
+    .about_stat_title{
+      font-size: 22px;
+    }
+    .about_stat_text, 
+    .about_text{
+      font-size: 15px;
+      line-height: 1.6
+    }
+    .feedback_li {
+      flex: 0 0 90%;
+      box-shadow: 8px 8px 8px #cacaca;
+      margin: 0px auto;
+    }
+    .contacts_data-text {
+      font-size: 15px;
+    }
+      .contact_icons {
+      width: 12px;
+      height: 12px;
+    }
+    .comp_title {
+      text-align: center;
+    }
+    .container__slider {
+      width: 90%;
+    } 
+
+  }
+  
+  @media(max-width: 540px) {
+    .about_team-kriv_ul__container{
+      margin-top: 25px;
+      padding: 15px;
+  }
+  .title {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 350;
+  }
+  .container__slider {
+    width: 95%;
+  }
+
+  }
+  @media(max-width: 446px) {
+    .button__consult {
+      border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 15px;
+        text-align: center;
+    }
+  }
