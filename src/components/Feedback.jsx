@@ -50,12 +50,7 @@ export default function Feedback() {
           return <img key={index} src={image} alt='feed' />;
         })}
       </CustomCarousel>
-      </div>
-      {/* {zoom ? <div className=''><div className='z-10'><img src={bank} alt='feedback' onClick={(e)=>console.log(e)}/><p>Банк Зенит</p></div></div> : '' } */}
-        {/* <div className='flex flex-wrap justify-between feedback_ul'>
-          {partnersList.map((partner)=> partner)}        
-          
-          </div> */}
+      </div>     
     </div>
   )
 }
