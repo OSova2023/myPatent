@@ -2,11 +2,11 @@
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  max-width: 1400px;
+  margin: 0px auto;
 }
 
 .container_body {
-  max-width: 1300px;
-  margin: 0px auto;
   padding: 0px 160px;
   /* px-40 2xl:px-30 xl:px-20 lg:px-10 md:px-5 sm:px-1 */
 }
