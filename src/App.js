@@ -10,6 +10,8 @@ import ItServices from './components/ItServices'
 import Services from './components/Services'
 import Error from './components/Error'
 import Agreements from './components/agreements/Agreement';
+import CompanyDetails from './components/company_details/CompanyDetails.jsx'
+import Thanx from './components/thanx/Thanx.jsx';
 
 
 function App({props}) {
@@ -23,6 +25,8 @@ function App({props}) {
           <Route path='/itservices' element={<ItServices />} />
           <Route path='/services' element={<Services />} />
           <Route path='/agreements' element={<Agreements />} />
+          <Route path='/companydetails' element={<CompanyDetails />} />
+          <Route path='/thanx' element={<Thanx />} />
           <Route path='/*' element={<Error />} />
       </Routes>
         <Footer />

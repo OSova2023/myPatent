@@ -1,3 +1,9 @@
+.gold {
+  color: #CCA652
+}
+.color61 {
+  color: #616161;
+}
 .footer {
     background: #F2F2F2;
     color: #202020;
@@ -12,9 +18,7 @@
   .header__logo-img>img {
     align-items:start
   }
-  .footer_column {
 
-  }
 
   .footer_list-title {
     font-weight: 600;

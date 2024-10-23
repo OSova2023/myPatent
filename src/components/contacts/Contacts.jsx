@@ -6,7 +6,8 @@ import clock from '../../images/clock1.png'
 import telegram from '../../images/telegram-black.png'
 import MyMap from '../Map'
 import './contacts.css'
-import '../../media.css'
+import '../.././media.css'
+import '../.././App.css'
 
 
 export default function Contacts() {

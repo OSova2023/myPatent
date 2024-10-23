@@ -1,5 +1,24 @@
+.About {
+  /* position: relative; */
+}
+.about_team-kriv_ul__container {
+  position: relative;
+}
+.about_carousel._active {
+  position: absolute;
+  top:30%;
+  left: 0;
+  z-index: 10;
+  align-self: center;
+  width: 50%;
+
+}
+.about_carousel {
+  display: none;
+}
+
 .about_team-kriv_ul__container{
-    color: #202020;
+  color: #202020d2;
     margin-top: 40px;
     /* padding: 55px; */
 }
@@ -22,20 +41,46 @@
     align-items: center;
 }
 
-.about_team-kriv_span {
-    /* font-size: 22px; */    
+.about_team-kriv_text-button {
+ display: flex;
+ gap: 50px;
+}
+.button__thanx {
+  border-radius: 4px;
+    background-color: #CCA652;
+    padding: 10px 30px;
+    display: inline-block;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: all .55s ease-in-out;
 }
 
 
+@media(max-width: 1024px) {
+  .button__thanx {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+  }
+
+
+@media(max-width: 768px) {
+  .about_team-kriv_text-button {
+    display: block;
+  }
+  .button__thanx {
+    margin: 20px auto;
+  }
+}
 @media(max-width: 640px) {
     .about_team-kriv__krivtsov-title {
       gap: 15px;
-      /* max-height: 160px;  */
   } 
   .title {
-    font-weight: 30px;
+    font-weight: 300px;
   }
-  /* .about_stat_title{
-    font-size: 23px;
-  } */
+  .about_team-li {
+    font-size: 14px;
+  }
   }

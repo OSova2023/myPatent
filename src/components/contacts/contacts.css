@@ -1,7 +1,7 @@
-.contacts_data-text {
-    
-}
 .contact_icons {
     width: 25px;
     height: 25px;
 }
+a.contacts_data-text:hover {
+    text-decoration: underline;
+  }

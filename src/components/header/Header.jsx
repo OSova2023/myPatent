@@ -11,6 +11,9 @@ import '../../media.css'
 
 export default function Header() {
   const [isClickedBurger, setIsClickedBurger] = useState(false)
+  const body = document.body
+  console.log(body)
+  isClickedBurger ? body.classList.add('_locked') : body.classList.remove('_locked')
 
   return (
     <div className='header'>

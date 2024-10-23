@@ -1,11 +1,14 @@
 import React from 'react'
 import './agreement.css'
+import '../../App.css'
+import '../../App.css'
+import '../../media.css'
 import { Link } from 'react-router-dom'
 
 export default function Agreements() {
 
   return (
-    <div className='container_body'>
+    <div className='container_body shrink-body'>
       <Link to='/' className='rounded bg-slate-300 text-slate-700 px-3 py-2'>Вернуть на главную</Link>
       <p className='agreement_p font-bold my-10'>Заявление о конфиденциальности</p>
       <p className='agreement_p'>Индивидуальный предприниматель Кривцов Владимир Игоревич (далее - ИП Кривцов В.И.), настоящим гарантирует, что любые Информация и

@@ -3,6 +3,7 @@ import ButtonConsult from '../ButtonConsult'
 import '../about/about.css'
 import '../../index.css'
 import '../../media.css'
+import '../../App.css'
 import krivmain from '../../images/about/krivzov_main.png'
 import elena from '../../images/about/elena.png'
 import kriv from '../../images/about/krivcov.png'
@@ -22,14 +23,50 @@ import slawnwft from '../../images/clients/slawnwft.png'
 import stomor from '../../images/clients/stomor.png'
 import tat from '../../images/clients/tat.png'
 import ugoria from '../../images/clients/ugoria.png'
+import { Link } from 'react-router-dom'
 
 export default function About() {
 
-  const partners = [food, gazprom, glawpul, jet24, mmt, mosgor, navka, pullman, resurs, ros, slawnwft, stomor, tat, ugoria]
 
-  
+  const partners = [food, gazprom, glawpul, jet24, mmt, mosgor, navka, pullman, resurs, ros, slawnwft, stomor, tat, ugoria]
+  const team = [
+    {
+    name: 'Владимир Кривцов',
+    title: 'Управляющий партнер',
+    src: kriv
+  },
+    {
+    name: 'Кирилл Пирогов',
+    title: 'Патентный поверенный',
+    src: pir
+  },
+    {
+    name: 'Елена Коломыцева',
+    title: 'Помощник патентного поверенного',
+    src: elena
+  },
+    {
+    name: 'Сергей Хроменков',
+    title: 'Юрист',
+    src: chrom
+  },
+]
+
+  const autobio_1 = 'окончил одну из лучших юридических академий СССР - Национальный юридически университет имени Ярослава Мудрого в г. Харьков'
+  const autobio_2 = 'в бизнесе с 2012 г.'
+  const autobio_3 = 'в 3х странах мира основал различные юридические компании'
+  const autobio_4 = 'был членом правления Международной продовольственной биржи'
+  const autobio_5 = 'запуск ГЧП совместно с Союзом Федерации'
+  const autobio_6 = 'амбассадор бизнес-клуба Капитал для инвесторов'
+  const autobio_7 = 'основатель бизнес общества Эквиум Беларусь'
+  const autobio_8 = 'основатель бренда MyPatent'
+  const autobio_9 = 'богослов, меценат и философ'
+  const autobio_10 = 'профессор бизнес-кафедры "Х10"'
+  const autoBioArray = [autobio_1,autobio_2,autobio_3,autobio_4,autobio_5,autobio_6,autobio_7,autobio_8,autobio_9,autobio_10]
+
+ 
   return (
-    <div className='About container_body flex flex-col gap-10'>
+    <div className='About container_body shrink-body flex flex-col gap-10'>
       <div className='bg_blue p-20 xl:p-12 900px:p-10 md:p-6 sm:p-4 '>
         <div className=''>
           <p className='title font-bold mb-6'>Патентное бюро
@@ -67,33 +104,32 @@ export default function About() {
       </div>     
       <div className='about_team__container'>
         <p className='title my-20 font-bold text-center md:my-10 sm:my-8 xs:my-4'>Наша команда</p>
-        <div className='about_team-ul mb-20 grid grid-cols-4 gap-20 xl:gap-2 md:gap-4 sm:gap-3 text-center md:grid-cols-2 xs:block'>
-          <li className='px-8 xl:px-3 xs:my-8'><img src={kriv} className='rounded-full w-2/3 xs:w-3/5 lg:w-full md:p-12 sm:p-8 xs:p-2 mx-auto' alt='kriv'/><p className='comp_title'>Владимир Кривцов</p><p className='comp_title_child'>Управляющий партнер</p></li>
-          <li className='px-8 xl:px-3 xs:my-8'><img src={pir} className='rounded-full w-2/3 xs:w-3/5 lg:w-full md:p-12 sm:p-8 xs:p-2 mx-auto ' alt='pirogov'/><p className='comp_title'>Кирилл Пирогов</p><p className='comp_title_child'>Патентный поверенный</p></li>
-          <li className='px-8 xl:px-3 xs:my-8'><img src={elena} className='rounded-full w-2/3 xs:w-3/5 lg:w-full md:p-12 sm:p-8 xs:p-2 mx-auto' alt='elena'/><p className='comp_title'>Елена Коломыцева</p><p className='comp_title_child'>Помощник патентного поверенного</p></li>
-          <li className='px-8 xl:px-3 xs:my-8'><img src={chrom} className='rounded-full w-2/3 xs:w-3/5 lg:w-full md:p-12 sm:p-8 xs:p-2 mx-auto' alt='chrom'/><p className='comp_title'>Сергей Хроменков</p><p className='comp_title_child'>Юрист</p></li>
+        <div className='about_team-ul mb-20 grid grid-cols-4 gap-20 xl:gap-2 900px:gap-y-8 sm:gap-3 text-center 900px:grid-cols-2 xs:block'>
+          
+          {team.map(person=>
+          <li className='px-8 xl:px-3 xs:my-8'><img src={person.src} className='rounded-full w-full xl:w-2/3 md:w-full md:p-8 sm:p-6 xs:p-2 mx-auto' alt='kriv'/><p className='comp_title'>{person.name}</p><p className='comp_title_child'>{person.title}</p></li>
+          )}
+      
         </div>
         <div className="strip">&nbsp;</div>
-        <div className='about_team-kriv_ul__container font-roboto rounded mt-20 bg_blue p-20 xl:p-12 900px:p-10 md:p-3'>
+        <div className='about_team-kriv_ul__container font-roboto rounded mt-20 bg_blue p-20 xl:p-12 900px:p-10 md:p-3'>       
           <div className='about_team-kriv__krivtsov-title'>
             <div className='my-auto'>
             <img src={kriv} className='rounded-full w-24' alt='kriv'/>
             </div>
             <p className='font-poppins font-bold text-center my-10 xs:my-1'><span className='about_team-kriv_span'>КРИВЦОВ</span> Владимир Игоревич</p>
           </div>
-          <ul className='about_team-kriv_ul flex flex-col'>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>окончил одну из лучших юридических академий СССР - Национальный юридически университет имени Ярослава Мудрого в г. Харьков</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>в бизнесе с 2012 г.</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>в 3х странах мира основал различные юридические компании</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>был членом правления Международной продовольственной биржи</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>запуск ГЧП совместно с Союзом Федерации</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>амбассадор бизнес-клуба Капитал для инвесторов</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>основатель бизнес общества Эквиум Беларусь</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>основатель бренда MyPatent</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>богослов, меценат и философ</li>
-            <li className="about_team-li"><span className='text-center mr-2'>&#10003;</span>профессор бизнес-кафедры "Х10"</li>
-          </ul>
+          <div className='about_team-kriv_text-button'>
+            <div>
+              <ul className='about_team-kriv_ul flex flex-col'>
+                {autoBioArray.map((item)=> <li className="about_team-li text-justify"><span className='text-center mr-2'>&#10003;</span>{item}</li> )}
+              </ul>
+            </div>
+            <div className='my-auto'><Link to='/thanx' className='button__thanx'>Благодарственные письма</Link></div>                    
+          </div>
+
         </div>
+        
       </div>
       <div className='about_clients__container'>
         <p className='title my-20 md:my-10 sm:my-8 xs:my-4 font-bold text-center'>Наши клиенты</p>
@@ -101,9 +137,6 @@ export default function About() {
           {partners.map((partner,i)=> <li className='w-24 xl:w-20 md:w-16' key={i}><img src={partner} className='rounded-full mx-auto' alt='food'/></li>)}
         </div>
       </div>
-      <div className=''></div>
-      <div className=''></div>
-      <div className=''></div>
     </div>
   )
 }
