@@ -95,7 +95,7 @@ export default function About() {
       </div>
       <div className="strip">&nbsp;</div>
       <div className='buro_krivtcov__container grid grid-cols-2 gap-10 vertical-align md:block'>
-        <div className='rounded'><img src={krivmain} alt='krivtcov_main'/></div>
+        <div className='rounded'><img src={krivmain} alt='krivtcov_main' className='mx-auto'/></div>
         <div className='flex flex-col gap-5 xl:gap-2 md:pt-10 xs:pt-5'>
           <div><p className='about_text-title text-2xl xl:text-xl font-bold'>Бюро «myPatent » – патентные поверенные, адвокаты и юристы</p></div>
           <div><p className='about_text text-lg '>С 2009 года мы помогаем представителям бизнеса и обычным клиентам зарегистрировать и защитить интеллектуальную собственность, извлечь прибыль из собственных разработок, бороться с незаконным использованием инноваций.</p> </div>
