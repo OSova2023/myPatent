@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPatent/static/css/main.25bb78d8.css",
-    "main.js": "/myPatent/static/js/main.f7862fc8.js",
+    "main.css": "/myPatent/static/css/main.e769c683.css",
+    "main.js": "/myPatent/static/js/main.fda17d29.js",
     "static/media/muzikl.png": "/myPatent/static/media/muzikl.1bf223f1f921b5167ef3.png",
     "static/media/elena.png": "/myPatent/static/media/elena.26390aed360132eeada2.png",
     "static/media/thanx_1.jpg": "/myPatent/static/media/thanx_1.3c3b301890b722f1c8ff.jpg",
@@ -15,6 +15,7 @@
     "static/media/lewel.jpg": "/myPatent/static/media/lewel.03b4acad4c65c7dbcfa5.jpg",
     "static/media/thanx_5.jpg": "/myPatent/static/media/thanx_5.1a10319ba6f920dc3cf7.jpg",
     "static/media/thanx_6.jpg": "/myPatent/static/media/thanx_6.d1e09b5c214ec9a76054.jpg",
+    "static/media/thanx_8.jpg": "/myPatent/static/media/thanx_8.620e5d84fd167b190838.jpg",
     "static/media/thanx_9.jpg": "/myPatent/static/media/thanx_9.f1c8cfbbc44008239913.jpg",
     "static/media/thanx_3.jpg": "/myPatent/static/media/thanx_3.51a66035f44559bde093.jpg",
     "static/media/ortotis.jpg": "/myPatent/static/media/ortotis.1943e88fe0529ebdc85c.jpg",
@@ -22,7 +23,6 @@
     "static/media/telegram-black.png": "/myPatent/static/media/telegram-black.8d147b9332ceefd512ef.png",
     "static/media/lexema.jpg": "/myPatent/static/media/lexema.d173d685602c9a65cee8.jpg",
     "static/media/adwokat.png": "/myPatent/static/media/adwokat.86456468a9f8408e2a8b.png",
-    "static/media/thanx_8.jpg": "/myPatent/static/media/thanx_8.17da13ebcca9247f049c.jpg",
     "static/media/pirogov1.jpg": "/myPatent/static/media/pirogov1.c279fc776ca6645eb0ca.jpg",
     "static/media/bank.png": "/myPatent/static/media/bank.c990872069fb2a31bfce.png",
     "static/media/telegram.png": "/myPatent/static/media/telegram.1e7f57554e634e763986.png",
@@ -34,11 +34,11 @@
     "static/media/resurs.png": "/myPatent/static/media/resurs.740cd92048163781fcc6.png",
     "static/media/clock1.png": "/myPatent/static/media/clock1.fc865731bd1cd27d4498.png",
     "index.html": "/myPatent/index.html",
-    "main.25bb78d8.css.map": "/myPatent/static/css/main.25bb78d8.css.map",
-    "main.f7862fc8.js.map": "/myPatent/static/js/main.f7862fc8.js.map"
+    "main.e769c683.css.map": "/myPatent/static/css/main.e769c683.css.map",
+    "main.fda17d29.js.map": "/myPatent/static/js/main.fda17d29.js.map"
   },
   "entrypoints": [
-    "static/css/main.25bb78d8.css",
-    "static/js/main.f7862fc8.js"
+    "static/css/main.e769c683.css",
+    "static/js/main.fda17d29.js"
   ]
 }
