@@ -26,7 +26,7 @@ export default function Feedback() {
  
   return (
     <div className='container_body shrink-body'>
-      <p className='title text-center mb-10 xs:mb-5'>Благодарности</p>
+      <p className='title text-center mb-10 xs:mb-5'>Благодарности Кривцову В.И</p>
       <div className='mx-auto flex justify-center'>
         <CustomCarousel>
           {partnersImgList.map((image, index) => {

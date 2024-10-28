@@ -27,7 +27,7 @@ function Thanx(props) {
     
   return (
     <div className='container_body'>
-        {/* <p className='title text-center mb-10 xs:mb-5'>Благодарности</p> */}
+        <p className='title text-center mb-10 xs:mb-5'>Благодарности Пирогову К.В.</p>
         <div className={`${ isShown ? 'thanx_container' : 'thanx_container_hidden'} flex flex-wrap justify-between gap-1`}>
             {thanxList.map((item)=><div className="feedback_li" key={item.src}><img src={item} alt="thanx" /></div>)}
         </div>
