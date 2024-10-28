@@ -6,7 +6,6 @@ import tel from '../../images/phone2.png'
 import loc from '../../images/location3.png'
 import env from '../../images/email.png'
 import clock from '../../images/clock1.png'
-import { Link } from 'react-router-dom'
 import { forwardRef } from 'react'
 
 
@@ -36,9 +35,10 @@ function Footer(props) {
           </div>
           <div className='footer_column flex flex-col gap-2'>
             <li className='footer_list-title mb-2'>Компания</li>
-            <li className='contacts_block flex color61'><Link to='/itservices' className='contacts_block'>IT Услуги</Link></li>
-            <li className='contacts_block flex color61'><Link to='/contacts'>Контакты</Link></li>
-            <li className='contacts_block gold'><Link to='/companydetails' onClick={()=>props.handleScrollTo(props.detailsRef)}>Реквизиты</Link></li>
+            <li className='contacts_block flex color61 contacts_block' onClick={()=>props.handleScrollTo(props.servRef)}>Услуги</li>
+            <li className='contacts_block flex color61 contacts_block' onClick={()=>props.handleScrollTo(props.itRef)}>IT Услуги</li>
+            <li className='contacts_block flex color61' onClick={()=>props.handleScrollTo(props.contactRef)}>Контакты</li>
+            <li className='contacts_block gold' onClick={()=>props.handleScrollTo(props.detailsRef)}>Реквизиты</li>
           </div>          
         </div>
         <div>

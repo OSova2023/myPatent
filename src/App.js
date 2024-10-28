@@ -52,7 +52,7 @@ function App(props) {
         <div className="strip my-20 xl:my-12 900px:my-8 md:my-6 mx-40 2xl:mx-30 xl:mx-20 lg:mx-10 md:mx-5 sm:mx-1" ref={detailsRef}>&nbsp;</div>
         <CompanyDetails /> 
         <button className={`up_active button_up fixed bottom-20 left-7 rounded-full`} onClick={()=>handleScrollTo(aboutRef)}>&#10148;</button>
-        <Footer thanxRef={thanxRef} handleScrollTo={handleScrollTo}/>
+        <Footer thanxRef={thanxRef} handleScrollTo={handleScrollTo} detailsRef={detailsRef} servRef={servRef} itRef={itRef} contactRef={contactRef}/>
       </div>
   );
 }

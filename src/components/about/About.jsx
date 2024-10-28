@@ -9,7 +9,7 @@ import krivmain from '../../images/about/krivzov_main.png'
 import elena from '../../images/about/kulakova.png'
 import kriv from '../../images/about/krivcov.png'
 import pir from '../../images/about/pirogov2_sm.png'
-import chrom from '../../images/about/chromenkov.png'
+// import chrom from '../../images/about/chromenkov.png'
 import prib from '../../images/about/pribylski.png'
 import pirogov from '../../images/about/pirogov_portrait_small.jpg'
 import food from '../../images/clients/food.png'
@@ -120,7 +120,7 @@ function About(props) {
         <div className='about_team-ul mb-20 grid grid-cols-4 gap-20 xl:gap-2 900px:gap-y-8 sm:gap-3 text-center 900px:grid-cols-2 xs:block'>
           
           {team.map(person=>
-          <li className='px-8 xl:px-3 xs:my-8'><img src={person.src} className='rounded-full w-full xl:w-2/3 md:w-full md:p-8 sm:p-6 xs:p-2 mx-auto' alt='kriv'/><p className='comp_title'>{person.name}</p><p className='comp_title_child'>{person.title}</p></li>
+          <li className='px-8 xl:px-3 xs:my-8' key={person}><img src={person.src} className='rounded-full w-full xl:w-2/3 md:w-full md:p-8 sm:p-6 xs:p-2 mx-auto' alt='kriv'/><p className='comp_title'>{person.name}</p><p className='comp_title_child'>{person.title}</p></li>
           )}
       
         </div>
