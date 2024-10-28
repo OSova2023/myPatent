@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/myPatent/static/css/main.e769c683.css",
-    "main.js": "/myPatent/static/js/main.53454c2d.js",
+    "main.css": "/myPatent/static/css/main.b1b0de93.css",
+    "main.js": "/myPatent/static/js/main.109c6f3a.js",
+    "static/media/kulakova.png": "/myPatent/static/media/kulakova.f77fb5c0eb009280778c.png",
+    "static/media/pirogov2_sm.png": "/myPatent/static/media/pirogov2_sm.9ef218f8ae4b75a65a51.png",
     "static/media/muzikl.png": "/myPatent/static/media/muzikl.1bf223f1f921b5167ef3.png",
-    "static/media/elena.png": "/myPatent/static/media/elena.26390aed360132eeada2.png",
     "static/media/thanx_1.jpg": "/myPatent/static/media/thanx_1.3c3b301890b722f1c8ff.jpg",
     "static/media/krivcov.png": "/myPatent/static/media/krivcov.2460174b385330a0563d.png",
     "static/media/chromenkov.png": "/myPatent/static/media/chromenkov.76c5f1bd48a08c504b0a.png",
@@ -24,7 +25,7 @@
     "static/media/lexema.jpg": "/myPatent/static/media/lexema.d173d685602c9a65cee8.jpg",
     "static/media/pirogov_portrait_small.jpg": "/myPatent/static/media/pirogov_portrait_small.17cb492c7a3b483440fa.jpg",
     "static/media/adwokat.png": "/myPatent/static/media/adwokat.86456468a9f8408e2a8b.png",
-    "static/media/pirogov1.jpg": "/myPatent/static/media/pirogov1.c279fc776ca6645eb0ca.jpg",
+    "static/media/pribylski.png": "/myPatent/static/media/pribylski.9227cd4c31a3c24bee21.png",
     "static/media/bank.png": "/myPatent/static/media/bank.c990872069fb2a31bfce.png",
     "static/media/telegram.png": "/myPatent/static/media/telegram.1e7f57554e634e763986.png",
     "static/media/location3.png": "/myPatent/static/media/location3.ffd04044ca59529e1481.png",
@@ -35,11 +36,11 @@
     "static/media/resurs.png": "/myPatent/static/media/resurs.740cd92048163781fcc6.png",
     "static/media/clock1.png": "/myPatent/static/media/clock1.fc865731bd1cd27d4498.png",
     "index.html": "/myPatent/index.html",
-    "main.e769c683.css.map": "/myPatent/static/css/main.e769c683.css.map",
-    "main.53454c2d.js.map": "/myPatent/static/js/main.53454c2d.js.map"
+    "main.b1b0de93.css.map": "/myPatent/static/css/main.b1b0de93.css.map",
+    "main.109c6f3a.js.map": "/myPatent/static/js/main.109c6f3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.e769c683.css",
-    "static/js/main.53454c2d.js"
+    "static/css/main.b1b0de93.css",
+    "static/js/main.109c6f3a.js"
   ]
 }
