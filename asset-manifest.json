@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/myPatent/static/css/main.e769c683.css",
-    "main.js": "/myPatent/static/js/main.fda17d29.js",
+    "main.js": "/myPatent/static/js/main.1aec393d.js",
     "static/media/muzikl.png": "/myPatent/static/media/muzikl.1bf223f1f921b5167ef3.png",
     "static/media/elena.png": "/myPatent/static/media/elena.26390aed360132eeada2.png",
     "static/media/thanx_1.jpg": "/myPatent/static/media/thanx_1.3c3b301890b722f1c8ff.jpg",
@@ -22,6 +22,7 @@
     "static/media/thanx_2.jpg": "/myPatent/static/media/thanx_2.8204ffa52227276fdeaa.jpg",
     "static/media/telegram-black.png": "/myPatent/static/media/telegram-black.8d147b9332ceefd512ef.png",
     "static/media/lexema.jpg": "/myPatent/static/media/lexema.d173d685602c9a65cee8.jpg",
+    "static/media/pirogov_portrait_small.jpg": "/myPatent/static/media/pirogov_portrait_small.17cb492c7a3b483440fa.jpg",
     "static/media/adwokat.png": "/myPatent/static/media/adwokat.86456468a9f8408e2a8b.png",
     "static/media/pirogov1.jpg": "/myPatent/static/media/pirogov1.c279fc776ca6645eb0ca.jpg",
     "static/media/bank.png": "/myPatent/static/media/bank.c990872069fb2a31bfce.png",
@@ -35,10 +36,10 @@
     "static/media/clock1.png": "/myPatent/static/media/clock1.fc865731bd1cd27d4498.png",
     "index.html": "/myPatent/index.html",
     "main.e769c683.css.map": "/myPatent/static/css/main.e769c683.css.map",
-    "main.fda17d29.js.map": "/myPatent/static/js/main.fda17d29.js.map"
+    "main.1aec393d.js.map": "/myPatent/static/js/main.1aec393d.js.map"
   },
   "entrypoints": [
     "static/css/main.e769c683.css",
-    "static/js/main.fda17d29.js"
+    "static/js/main.1aec393d.js"
   ]
 }
