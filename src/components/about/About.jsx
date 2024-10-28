@@ -53,7 +53,7 @@ function About(props) {
   },
 ]
 
-  const autobio_1 = 'окончил одну из лучших юридических академий СССР - Национальный юридически университет имени Ярослава Мудрого в г. Харьков'
+  const autobio_1 = 'окончил одну из лучших юридических академий СССР - Национальный юридический университет имени Ярослава Мудрого в г. Харьков'
   const autobio_2 = 'в бизнесе с 2012 г.'
   const autobio_3 = 'в 3х странах мира основал различные юридические компании'
   const autobio_4 = 'был членом правления Международной продовольственной биржи'
@@ -94,7 +94,7 @@ function About(props) {
       </div>
       <div className='flex flex-wrap justify-around my-10 xs:my-5 font-roboto gap-5'>
         <div className='text-center'>
-          <div className='about_stat_title gold text-4xl mb-5 xl:mb-3 font-bold'><p>12</p></div>
+          <div className='about_stat_title gold text-4xl mb-5 xl:mb-3 font-bold'><p>15</p></div>
           <div className='about_stat_text grey text-center text-xl leading-6'>лет успешной практики</div>
         </div>
         <div className='text-center'>
