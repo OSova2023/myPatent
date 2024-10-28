@@ -6,10 +6,11 @@ import '../../index.css'
 import '../../media.css'
 import '../../App.css'
 import krivmain from '../../images/about/krivzov_main.png'
-import elena from '../../images/about/elena.png'
+import elena from '../../images/about/kulakova.png'
 import kriv from '../../images/about/krivcov.png'
-import pir from '../../images/about/pirogov1.jpg'
+import pir from '../../images/about/pirogov2_sm.png'
 import chrom from '../../images/about/chromenkov.png'
+import prib from '../../images/about/pribylski.png'
 import pirogov from '../../images/about/pirogov_portrait_small.jpg'
 import food from '../../images/clients/food.png'
 import gazprom from '../../images/clients/gazprom.png'
@@ -41,14 +42,14 @@ function About(props) {
     src: pir
   },
     {
-    name: 'Елена Коломыцева',
-    title: 'Помощник патентного поверенного',
+    name: 'Елена Кулакова',
+    title: 'Юрист',
     src: elena
   },
     {
-    name: 'Сергей Хроменков',
+    name: 'Андрей Прибыльский',
     title: 'Юрист',
-    src: chrom
+    src: prib
   },
 ]
 
