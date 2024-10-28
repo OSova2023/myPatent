@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { forwardRef, useEffect, useState } from 'react'
 import '../../media.css'
-import { Link } from 'react-router-dom'
+import "../../App.css"
 import thanx_1 from '../../images/thanx/thanx_1.jpg'
 import thanx_2 from '../../images/thanx/thanx_2.jpg'
 import thanx_3 from '../../images/thanx/thanx_3.jpg'
@@ -11,7 +11,7 @@ import thanx_7 from '../../images/thanx/thanx_7.jpg'
 import thanx_8 from '../../images/thanx/thanx_8.jpg'
 import thanx_9 from '../../images/thanx/thanx_9.jpg'
 
-export default function Thanx() {
+function Thanx(props) {
     const img1 = thanx_1
     const img2 = thanx_2
     const img3 = thanx_3
@@ -22,12 +22,22 @@ export default function Thanx() {
     const img8 = thanx_8
     const img9 = thanx_9
     const thanxList = [img1,img2,img3,img4,img5,img6,img7,img8,img9]
+
+    const [isShown, setIsShown] = useState(false)
+    
   return (
     <div className='container_body'>
-        <div className='text-center'><Link to='/' className='rounded bg-slate-300 text-slate-700 px-3 py-2'>Назад</Link></div>
-        <div className='grid grid-cols-2 gap-5 xs:flex xs:flex-wrap my-4'>
-            {thanxList.map((item)=><div className="p-5 feedback_li"><img src={item}  alt="thanx" /></div>)}
+        {/* <p className='title text-center mb-10 xs:mb-5'>Благодарности</p> */}
+        <div className={`${ isShown ? 'thanx_container' : 'thanx_container_hidden'} flex flex-wrap justify-between gap-1`}>
+            {thanxList.map((item)=><div className="feedback_li" key={item.src}><img src={item} alt="thanx" /></div>)}
         </div>
+        <button className='button__thx mt-8 mx-auto flex justify-center' 
+          onClick={() =>{
+            setIsShown(prev=>!prev)
+            props.handleScrollTo(props.thanxRef)
+          }}>{isShown ? "Скрыть" : 'Показать всё'}</button>
     </div>
   )
 }
+
+export default forwardRef(Thanx)

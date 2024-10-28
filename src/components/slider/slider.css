@@ -1,6 +1,6 @@
 .container__slider {
     position: relative;
-    width: 70%;
+    width: 50%;
     padding: 0;
     overflow: hidden;
     display: flex;
@@ -13,7 +13,7 @@
 
   @media(max-width: 932px) {
     .container__slider {
-      width: 90%;
+      width: 60%;
     }
   }
   @media(max-width: 640px) {

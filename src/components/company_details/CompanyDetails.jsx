@@ -2,12 +2,11 @@ import React from 'react'
 import '../../media.css'
 import '../../App.css'
 import './company_details.css'
-import { Link } from 'react-router-dom'
 
 export default function CompanyDetails() {
   return (
     <div className='container_body shrink-body'>
-      <Link to='/' className='rounded bg-slate-300 text-slate-700 px-3 py-2'>Вернуть на главную</Link>
+      <p className='title text-center'>Реквизиты</p>
       <div className='company-details_ul__container'>
         <ul className='company-details_ul'>
           <p className='company-details_li'>Номер счёта: 40702810502580004650

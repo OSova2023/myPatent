@@ -13,6 +13,7 @@ import '../.././App.css'
 export default function Contacts() {
   return (
     <div className='container_body'>
+      <p className='title text-center mb-10 xs:mb-5'>Контакты</p>
       <div className='flex flex-col gap-4 sm:gap-2 mb-10 text-xl bg_blue p-16 lg:p-12 md:p-10 xs:p-8 rounded'>
         <p className='title mb-8'>Работаем по всей России. По вопросам сотрудничества позвоните нам или отправьте сообщение в Telegram</p>
         <div className='contacts_data_container flex gap-4'>
@@ -27,10 +28,10 @@ export default function Contacts() {
         <div className='flex gap-4'>
             <img src={telegram} className='contact_icons ' alt='telegram' /><a href="https://t.me/MyPatent8" className='contacts_data-text'>Telegram</a>
         </div>
-        <div className='flex gap-4'>
+        <div className='flex gap-4'> 
             <img src={clock} className='contact_icons' alt='tel' /><p className='contacts_data-text'>Время работы: 9-20</p>
         </div>
-      </div>
+      </div >
       <MyMap />
     </div>
         

@@ -7,9 +7,10 @@ import loc from '../../images/location3.png'
 import env from '../../images/email.png'
 import clock from '../../images/clock1.png'
 import { Link } from 'react-router-dom'
+import { forwardRef } from 'react'
 
 
-export default function Footer() {
+function Footer(props) {
   return (
     <div className='footer'>      
       <div className='footer__container container_body font-robotoslab'>
@@ -37,15 +38,19 @@ export default function Footer() {
             <li className='footer_list-title mb-2'>Компания</li>
             <li className='contacts_block flex color61'><Link to='/itservices' className='contacts_block'>IT Услуги</Link></li>
             <li className='contacts_block flex color61'><Link to='/contacts'>Контакты</Link></li>
-            <li className='contacts_block gold'><Link to='/companydetails'>Реквизиты</Link></li>
+            <li className='contacts_block gold'><Link to='/companydetails' onClick={()=>props.handleScrollTo(props.detailsRef)}>Реквизиты</Link></li>
           </div>          
         </div>
         <div>
         </div>
       </div>
       <div className='footer_years container_body'>
-        <p className='pt-10 md:pt-5'>© 2009-2025. &nbsp;<Link to='/agreements' className='gold'>Политика</Link></p>
+        <p className='pt-10 md:pt-5'>© 2009-2025. &nbsp;
+          {/* <Link to='/agreements' className='gold'>Политика</Link> */}
+          </p>
       </div>      
     </div>
   )
 }
+
+export default forwardRef(Footer)

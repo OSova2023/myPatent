@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 import '../media.css'
+
 import CustomCarousel from './slider/Slider'
 import adw from '../images/feedback/adwokat.png'
 import bank from '../images/feedback/bank.png'
@@ -24,7 +25,8 @@ export default function Feedback() {
   const partnersImgList = [img1,img2,img3,img4,img5,img6,img7,img8]
  
   return (
-    <div className='flex container_body shrink-body'>
+    <div className='container_body shrink-body'>
+      <p className='title text-center mb-10 xs:mb-5'>Благодарности</p>
       <div className='mx-auto flex justify-center'>
         <CustomCarousel>
           {partnersImgList.map((image, index) => {

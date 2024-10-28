@@ -1,5 +1,6 @@
 import React from 'react'
 import ButtonConsult from '../ButtonConsult'
+import { forwardRef } from 'react'
 import '../about/about.css'
 import '../../index.css'
 import '../../media.css'
@@ -9,6 +10,7 @@ import elena from '../../images/about/elena.png'
 import kriv from '../../images/about/krivcov.png'
 import pir from '../../images/about/pirogov1.jpg'
 import chrom from '../../images/about/chromenkov.png'
+import pirogov from '../../images/about/pirogov_portrait_small.jpg'
 import food from '../../images/clients/food.png'
 import gazprom from '../../images/clients/gazprom.png'
 import glawpul from '../../images/clients/glawpul.png'
@@ -23,10 +25,8 @@ import slawnwft from '../../images/clients/slawnwft.png'
 import stomor from '../../images/clients/stomor.png'
 import tat from '../../images/clients/tat.png'
 import ugoria from '../../images/clients/ugoria.png'
-import { Link } from 'react-router-dom'
 
-export default function About() {
-
+function About(props) {
 
   const partners = [food, gazprom, glawpul, jet24, mmt, mosgor, navka, pullman, resurs, ros, slawnwft, stomor, tat, ugoria]
   const team = [
@@ -63,6 +63,16 @@ export default function About() {
   const autobio_9 = 'богослов, меценат и философ'
   const autobio_10 = 'профессор бизнес-кафедры "Х10"'
   const autoBioArray = [autobio_1,autobio_2,autobio_3,autobio_4,autobio_5,autobio_6,autobio_7,autobio_8,autobio_9,autobio_10]
+ 
+  const autobio_p1 = 'Генеральный директор юридической компании ООО "ПИРОГОВ И КОМПАНИЯ"'
+  const autobio_p2 = 'Член Московского областного отделения "ОПОРА РОССИИ"'
+  const autobio_p3 = 'Член Федерального комитета "ОПОРА РОССИИ" по развитию предпринимательства на цифровых платформах'
+  const autobio_p4 = 'Председатель комитета по развитию предпринимательства на цифровых платформах общероссийской общественной организации малого и среднего предпринимательства Московского обласного отделения "ОПОРА РОССИИ"'
+  const autobio_p5 = 'Член комитета по франчайзингу и интелектуальной собственности Московского обласного отделения "ОПОРА РОССИИ"'
+  const autobio_p6 = 'Член регионального совета Московского обласного отделения "ОПОРА РОССИИ"'
+  const autobio_p7 = 'Куратор ЦФО совместного федерального проекта "ОПОРА-СТАРТ" и "WILDBERRIES" ОБУЧАЮЩЕГО КУРСА "БИЗНЕС-КОНСУЛЬТАНТ" на платформе "WILDBERRIES"'
+  const autobio_p8 = 'Действующий селлер цифровой платформы DIGITAL WILDBERRIES'
+  const autoBioPirArray = [autobio_p1,autobio_p2,autobio_p3,autobio_p4,autobio_p5,autobio_p6,autobio_p7,autobio_p8]
 
  
   return (
@@ -76,7 +86,9 @@ export default function About() {
             <li>Патентование</li>
             <li>Защита интеллектуальной собственности</li>
           </ul>
-          <ButtonConsult />
+          <div onClick={()=>props.handleScrollTo(props.contactRef)}>
+            <ButtonConsult />
+          </div>
         </div>
       </div>
       <div className='flex flex-wrap justify-around my-10 xs:my-5 font-roboto gap-5'>
@@ -112,23 +124,44 @@ export default function About() {
       
         </div>
         <div className="strip">&nbsp;</div>
-        <div className='about_team-kriv_ul__container font-roboto rounded mt-20 bg_blue p-20 xl:p-12 900px:p-10 md:p-3'>       
-          <div className='about_team-kriv__krivtsov-title'>
-            <div className='my-auto'>
-            <img src={kriv} className='rounded-full w-24' alt='kriv'/>
-            </div>
-            <p className='font-poppins font-bold text-center my-10 xs:my-1'><span className='about_team-kriv_span'>КРИВЦОВ</span> Владимир Игоревич</p>
-          </div>
-          <div className='about_team-kriv_text-button'>
-            <div>
-              <ul className='about_team-kriv_ul flex flex-col'>
-                {autoBioArray.map((item)=> <li className="about_team-li text-justify"><span className='text-center mr-2'>&#10003;</span>{item}</li> )}
-              </ul>
-            </div>
-            <div className='my-auto'><Link to='/thanx' className='button__thanx'>Благодарственные письма</Link></div>                    
-          </div>
 
+        <div>
+          {/* Прирогов */}
+          <div className='about_team-kriv_ul__container font-roboto rounded mt-20 bg_blue p-20 xl:p-12 900px:p-10 md:p-3'>       
+            <div className='about_team-kriv__krivtsov-title'>
+              <div className='my-auto'>
+              <img src={pirogov} className='rounded-full w-24' alt='pirogov'/>
+              </div>
+              <p className='font-poppins font-bold text-center my-10 xs:my-1'><span className='about_team-kriv_span'>ПИРОГОВ</span> Кирилл Витальевич</p>
+            </div>
+            <div className='about_team-kriv_text-button'>
+              <div>
+                <ul className='about_team-kriv_ul flex flex-col'>
+                  {autoBioPirArray.map((item)=> <li className="about_team-li text-justify"><span className='text-center mr-2'>&#10003;</span>{item}</li> )}
+                </ul>
+              </div>
+              <div className='my-auto button__thanx' onClick={()=>props.handleScrollTo(props.thanxRef)}>Благодарственные письма</div>                    
+            </div>
+          </div>
+          {/* Кривцов */}
+          <div className='about_team-kriv_ul__container font-roboto rounded mt-20 bg_blue p-20 xl:p-12 900px:p-10 md:p-3'>       
+            <div className='about_team-kriv__krivtsov-title'>
+              <div className='my-auto'>
+              <img src={kriv} className='rounded-full w-24' alt='kriv'/>
+              </div>
+              <p className='font-poppins font-bold text-center my-10 xs:my-1'><span className='about_team-kriv_span'>КРИВЦОВ</span> Владимир Игоревич</p>
+            </div>
+            <div className='about_team-kriv_text-button'>
+              <div>
+                <ul className='about_team-kriv_ul flex flex-col'>
+                  {autoBioArray.map((item)=> <li className="about_team-li text-justify"><span className='text-center mr-2'>&#10003;</span>{item}</li> )}
+                </ul>
+              </div>
+              <div className='my-auto button__thanx' onClick={()=>props.handleScrollTo(props.feedbackRef)}>Благодарственные письма</div> 
+            </div>
+          </div>
         </div>
+
         
       </div>
       <div className='about_clients__container'>
@@ -140,3 +173,5 @@ export default function About() {
     </div>
   )
 }
+
+export default forwardRef(About)

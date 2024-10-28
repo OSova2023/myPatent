@@ -3,7 +3,7 @@ import '../App.css'
 import './itservices.css'
 import '../media.css'
 
-export default function ItServices() {
+export default function ItServices({itRef}) {
   
   const check_mark = <span className='text-center mr-2'>&#10003;</span>
   const block1 = <div className='flex flex-col gap-5 p-5'>
@@ -61,13 +61,12 @@ export default function ItServices() {
 
   const servicesArray = [service_1,service_2,service_3,service_4,service_5]
 
-
-  const findText =(i) => {
+    const findText =(i) => {
     console.log(i)
     const res = blocksArray.find((text, index) => i === index)
     console.log(res.props.children)
     setBlockShown(res)    
-  }
+    }
 
   return (
     <div className='container_body shrink-body'>

@@ -175,6 +175,9 @@
     .container__slider {
       width: 90%;
     } 
+    .thanx_container_hidden {
+      max-height: 280px;
+    }
 
   }
   
@@ -205,4 +208,5 @@
       line-height: 30px;
       font-weight: 350;
     }
+
   }
