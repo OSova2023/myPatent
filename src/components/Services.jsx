@@ -31,7 +31,7 @@ const serviceArray = [
 export default function Services() {
   return (
     <div className='container_body shrink-body'>
-      <p className='title my-5 font-bold text-center xl:my-2'>Наши услуги</p>
+      <p className='title my-5 font-bold text-center xl:my-2'>Услуги</p>
         <div className='grid grid-cols-3 gap-20 my-20 xl:my-14 lg:my-10 md:my-6 xs:my-3 xl:gap-14 lg:gap-10 md:gap-4 sm:gap-3 xs:gap-2 md:grid-cols-2 sm:flex sm:flex-wrap'>
           {serviceArray.map((item, i)=><li className='' key={i}><p className='comp_title'>{item.title}</p><p>{item.text}</p></li>)}
             {/* <li className=''><p className='comp_title'>Регистрация товарного знака</p><p>Помощь с подачей заявки в Роспатент. Получение решения о регистрации товарного знака в обычном и ускоренном режиме.</p></li>

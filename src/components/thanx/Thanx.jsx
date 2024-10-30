@@ -1,4 +1,4 @@
-import React, { forwardRef, useEffect, useState } from 'react'
+import React, { forwardRef, useState } from 'react'
 import '../../media.css'
 import "../../App.css"
 import thanx_1 from '../../images/thanx/thanx_1.jpg'

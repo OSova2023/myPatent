@@ -26,7 +26,7 @@ function Header(props) {
             <ul className='header_ul gap-8 text-xl 2xl:text-xl xl:text-lg lg:text-lg md:text-base sm:text-sm 2xl:gap-2 xl:gap-1'>
               <li className='link' onClick={()=>props.handleScrollTo(props.aboutRef)}>О нас</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.servRef)}>Услуги</li>
-              <li className='link' onClick={()=>props.handleScrollTo(props.itRef)}>IT Услуги</li>
+              <li className='link' onClick={()=>props.handleScrollTo(props.itRef)}>IT-Услуги</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.feedbackRef)}>Отзывы</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.contactRef)}>Контакты</li>
             </ul>
@@ -49,7 +49,7 @@ function Header(props) {
             <ul className='header_ul grey block gap-8 text-xl 2xl:text-xl xl:text-lg lg:text-lg md:text-md sm:text-sm 2xl:gap-2 xl:gap-1'>
               <li className='link' onClick={()=>props.handleScrollTo(props.aboutRef)}>О нас</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.servRef)}>Услуги</li>
-              <li className='link' onClick={()=>props.handleScrollTo(props.itRef)}>IT Услуги</li>
+              <li className='link' onClick={()=>props.handleScrollTo(props.itRef)}>IT-Услуги</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.feedbackRef)}>Отзывы</li>
               <li className='link' onClick={()=>props.handleScrollTo(props.contactRef)}>Контакты</li>
               <li><div className='header-mobile_contacts mx-auto flex justify-center gap-2 font-bold text-xl 2xl:text-xl xl:text-lg lg:text-lg md:text-md sm:text-sm xs:text-sm mt-20'><img src={tel} className='w-5 ' alt='tel'/><a href="tel:+78005507583" className='font-robotolab mx-0 text-center'>8 (800) 550-75-83</a></div></li>      
