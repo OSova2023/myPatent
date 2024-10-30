@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myPatent/static/css/main.b1b0de93.css",
-    "main.js": "/myPatent/static/js/main.a3383c58.js",
+    "main.css": "/myPatent/static/css/main.ac9a33fb.css",
+    "main.js": "/myPatent/static/js/main.7b5a3fb9.js",
     "static/media/kulakova.png": "/myPatent/static/media/kulakova.f77fb5c0eb009280778c.png",
     "static/media/pirogov2_sm.png": "/myPatent/static/media/pirogov2_sm.9ef218f8ae4b75a65a51.png",
     "static/media/muzikl.png": "/myPatent/static/media/muzikl.1bf223f1f921b5167ef3.png",
@@ -35,11 +35,11 @@
     "static/media/resurs.png": "/myPatent/static/media/resurs.740cd92048163781fcc6.png",
     "static/media/clock1.png": "/myPatent/static/media/clock1.fc865731bd1cd27d4498.png",
     "index.html": "/myPatent/index.html",
-    "main.b1b0de93.css.map": "/myPatent/static/css/main.b1b0de93.css.map",
-    "main.a3383c58.js.map": "/myPatent/static/js/main.a3383c58.js.map"
+    "main.ac9a33fb.css.map": "/myPatent/static/css/main.ac9a33fb.css.map",
+    "main.7b5a3fb9.js.map": "/myPatent/static/js/main.7b5a3fb9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1b0de93.css",
-    "static/js/main.a3383c58.js"
+    "static/css/main.ac9a33fb.css",
+    "static/js/main.7b5a3fb9.js"
   ]
 }
